@@ -1,2 +1,2 @@
 # Monkey-Sass
-## Monkey Framework Sass
+Monkey Framework Sass
