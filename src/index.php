@@ -86,5 +86,6 @@
     </section>
   </footer>
   <script src="dist/js/main.js"></script>
+  <script src="dist/bundle.js"></script>
 </body>
 </html>

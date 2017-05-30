@@ -1,9 +1,9 @@
 @mixin font( $name, $src, $hash ) {
   @font-face {
     font-family: $name;
-    src: url('../fonts/' + $src + '.eot');
-    src: url('../fonts/' + $src + '.woff') format('woff'),
-        url('../fonts/' + $src + '.woff2') format('woff2');
+    src: url('/dist/fonts/' + $src + '.eot');
+    src: url('/dist/fonts/' + $src + '.woff') format('woff'),
+        url('/dist/fonts/' + $src + '.woff2') format('woff2');
     font-weight:normal;
     font-style:normal;
   }
