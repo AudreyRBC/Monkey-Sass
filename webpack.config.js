@@ -9,8 +9,13 @@ var styleLintPlugin = require('stylelint-webpack-plugin');
 require('es6-promise').polyfill();
 
 module.exports = {
-  entry: './src/assets/js/app.js',
-
+  entry: [
+    './src/js/libs/jquery-3.1.1.min.js',
+    // './src/js/libs/slick.min.js',
+    './src/js/libs/inspector.js',
+    './src/js/main.js',
+    './src/js/app.js',
+  ],
   output: {
     path: __dirname,
     filename: 'dist/js/app.min.js'
@@ -28,7 +33,7 @@ module.exports = {
       syntax: 'scss',
       failOnError: false,
       quiet: false
-    })
+    }),
   ],
 
   module: {

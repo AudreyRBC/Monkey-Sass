@@ -1,0 +1,27 @@
+.html-inspector{
+  position: relative;
+}
+.inspector-button{
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  opacity: 0;
+  z-index: 1000;
+  color: red;
+  transition: all .3s ease;
+  border: 3px solid transparent;
+  &.visible{
+    opacity: 1;
+    border: 3px solid red;
+  }
+  &:hover{
+    color: yellow;
+    border: 3px solid yellow;
+  }
+}
+code{
+  max-width: 100%;
+}

@@ -580,28 +580,36 @@ fieldset, input, button {
   margin-bottom: 20px;
 }
 
-/* HTML inspector button styles
--------------------------------------------------- */
-.js-html-inspector {
+.html-inspector {
   position: relative;
 }
 
-.js-html-inspector .js-btn-inspector {
-  display: none;
+.inspector-button {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
   position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 17px;
+  top: 20px;
+  right: 50px;
+  opacity: 0;
+  z-index: 1000;
+  color: red;
+  transition: all .3s ease;
+  border: 3px solid transparent;
 }
 
-.js-html-inspector:hover .js-btn-inspector {
-  display: block;
+.inspector-button.visible {
+  opacity: 1;
+  border: 3px solid red;
 }
 
-#dialog-html-inspector code {
-  word-break: normal;
-  word-wrap: normal;
-  white-space: pre;
+.inspector-button:hover {
+  color: yellow;
+  border: 3px solid yellow;
+}
+
+code {
+  max-width: 100%;
 }
 
 @font-face {

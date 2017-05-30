@@ -6,7 +6,8 @@
   "scripts": {
     "start": "./node_modules/.bin/webpack-dev-server --config webpack.config.js --port 3001 --hot --inline",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "bundle": "./node_modules/.bin/webpack --config webpack.config.js"
+    "bundle": "./node_modules/.bin/webpack --config webpack.config.js",
+    "dev": "webpack --watch"
   },
   "author": "Aki Karkkainen",
   "license": "MIT",
@@ -39,6 +40,7 @@
     "webpack"
   ],
   "dependencies": {
-    "extract-text-webpack-plugin": "^1.0.1"
+    "extract-text-webpack-plugin": "^1.0.1",
+    "jquery": "^3.2.1"
   }
 }
