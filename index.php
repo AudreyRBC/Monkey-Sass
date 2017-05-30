@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
-  <header class="flex-row">
+  <header class="flex-row html-inspector">
     <div class="header__brand">
       <img src="" alt="">
     </div>
@@ -25,6 +25,8 @@
     </button>
   </header>
   <main>
+
+    <?php include 'inspector.html' ?>
     <?php include 'colors.php' ?>
     <?php include 'fonts.php' ?>
     <?php include 'cta.php' ?>
@@ -34,6 +36,7 @@
     <?php include 'containers.php' ?>
     <?php include 'tables.php' ?>
     <?php include 'blocks.php' ?>
+
 
 
 

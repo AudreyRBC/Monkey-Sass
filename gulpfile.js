@@ -23,7 +23,7 @@ var gulp = require('gulp'),
 var jsFiles = [
   'assets/js/libs/jquery-3.1.1.min.js',
   'assets/js/libs/slick.min.js',
-  'assets/js/libs/stylesheet.js',
+  'assets/js/libs/inspector.js',
   'assets/js/main.js',
   ];
 
