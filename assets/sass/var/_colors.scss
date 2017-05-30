@@ -1,0 +1,105 @@
+//-----------------------------------------//
+//Set your colors
+//-----------------------------------------//
+
+
+// $var : you color;
+
+$white :     #ffffff;
+$lightcream :#f8f4ec;
+$cream :     #efe8da;
+$mediumgrey: #a39e94;
+$grey      : #6a6761;
+$darkgrey :  #212620;
+$black :     #000000;
+$yellow :    #fcb60d;
+$red :       #a22929;
+
+
+//global classColor
+$setColors :
+
+  // (yourClassName $var)
+  (white $white)
+  (lightcream $lightcream)
+  (cream $cream)
+  (mediumgrey $mediumgrey)
+  (grey $grey)
+  (darkgrey $darkgrey)
+  (black $black)
+  (yellow $yellow)
+  (red $red)
+;
+
+
+//dark background-color
+$darkBackground :
+
+  // (yourClassName $var)
+  (mediumgrey $mediumgrey)
+  (grey $grey)
+  (darkgrey $darkgrey)
+  (black $black)
+  (red $red)
+;
+
+//light background-color
+$lightBackground :
+
+  // (yourClassName $var)
+  (white $white)
+  (lightcream $lightcream)
+  (cream $cream)
+  (yellow $yellow)
+;
+
+
+// < old sass
+@each $i in $setColors {
+
+  //-----------------------------------------//
+  //bg-color
+  //-----------------------------------------//
+  .bg-#{nth($i,1)} {
+    background-color: #{nth($i,2)};
+    $myColor : #{nth($i,2)};
+    &.gradient-right{
+      background: linear-gradient(281deg,#{nth($i,2)}, 60%, transparent);
+    }
+    &.gradient-left{
+      background: linear-gradient(77deg,#{nth($i,2)}, 80%, transparent);
+    }
+    
+  }
+
+  //-----------------------------------------//
+  //text-color
+  //-----------------------------------------//
+
+  .#{nth($i,1)} {
+    color: #{nth($i,2)} !important;
+  }
+
+}
+
+
+
+// new sass
+// @each $color, $i in $setColors {
+//   //-----------------------------------------//
+//   //bg-color
+//   //-----------------------------------------//
+//
+//   .bg-#{$i} {
+//     background-color: #{$color};
+//   }
+//
+//   //-----------------------------------------//
+//   //text-color
+//   //-----------------------------------------//
+//
+//   .#{$i} {
+//     color: #{$color};
+//   }
+//
+// }

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>layer</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M18.6495939,0.858391588 C18.2899077,-0.287762284 17.7094267,-0.284497611 17.3507651,0.858391588 L13.259829,13.8943161 L1.02604426,14.660803 C-0.167928094,14.7356094 -0.345942825,15.36027 0.629415904,16.0559602 L10.3954573,23.0217461 L6.68908968,34.8322283 C6.32940347,35.9783821 6.83124935,36.3410831 7.80770549,35.6496353 L18.0001795,28.4321445 L28.1926535,35.6496353 C29.1666589,36.3393477 29.669931,35.9751175 29.3112693,34.8322283 L25.6049017,23.0217461 L35.3709431,16.0559602 C36.3451049,15.3611237 36.1687252,14.7356368 34.9743146,14.660803 L22.74053,13.8943161 L18.6495939,0.858391588 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/star">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="layer" fill="#FFFFFF" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

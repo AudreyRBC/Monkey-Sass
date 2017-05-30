@@ -1,0 +1,35 @@
+.burger{
+  width: 70px;
+  height: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+  // position: absolute;
+  // left: 0;
+  // top: -8px;
+  order: 3;
+  .burger-line{
+    display: block;
+    background: $red;
+    width: 12px;
+    height: 2px;
+    border-radius: 20px;
+    &:after, &:before{
+      content: '';
+      display: block;
+      background: $red;
+      width: 100%;
+      height: 2px;
+      border-radius: 20px;
+    }
+    &:after{
+      transform: translateY(2px);
+    }
+    &:before{
+      transform: translateY(-4px);
+    }
+  }
+}

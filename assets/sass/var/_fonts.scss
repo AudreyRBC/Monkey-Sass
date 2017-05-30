@@ -1,0 +1,120 @@
+@mixin font( $name, $src, $hash ) {
+  @font-face {
+    font-family: $name;
+    src: url('../fonts/' + $src + '.eot');
+    src: url('../fonts/' + $src + '.woff') format('woff'),
+        url('../fonts/' + $src + '.woff2') format('woff2');
+    font-weight:normal;
+    font-style:normal;
+  }
+}
+
+
+// (fontvar, yournamefile, yournameHash)
+
+@include font(fontxbold, raleway-extrabold, raleway-extrabold);
+@include font(fontbold, ubuntu-bold, ubuntu-bold);
+@include font(fontsemibold, ubuntu-medium, ubuntu-medium);
+@include font(fontregular, ubuntu-regular, ubuntu-regular);
+@include font(fontlight, ubuntu-light, ubuntu-light);
+@include font(icomoon, icomoon, icomoon);
+
+
+
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: auto;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 28px;
+}
+
+//logo: ;
+.icon-hunger-race-big{
+  margin-bottom: 20px;
+  // display: block;
+  display: inline-block;
+}
+.icon-hunger-race-big:before {
+  content: "\e905";
+  font-size: 80px;
+  @media screen and(min-width: 1024px){
+    font-size: 130px;
+  }//1024px
+}
+
+
+//custom icon
+.icon-commando:before {
+  content: "\e900";
+}
+.icon-deathride:before {
+  content: "\e901";
+}
+.icon-kayak:before {
+  content: "\e907";
+}
+.icon-runner-2:before {
+  content: "\e90b";
+}
+.icon-runner:before {
+  content: "\e90c";
+}
+.icon-timer:before {
+  content: "\e910";
+}
+
+//usual icon
+.icon-heart:before {
+  content: "\e904";
+  font-size: 22px;
+}
+.icon-mail:before {
+  content: "\e909";
+  font-size: 18px;
+}
+.icon-star:before {
+  content: "\e90d";
+  font-size: 22px;
+}
+.icon-tag:before {
+  content: "\e90e";
+}
+.icon-time:before {
+  content: "\e90f";
+}
+.icon-pig:before {
+  content: "\e90a";
+}
+
+
+//social-icon
+.icon-instagram:before {
+  content: "\e906";
+  font-size: 18px;
+}
+.icon-linkedin:before {
+  content: "\e908";
+  font-size: 18px;
+}
+.icon-facebook:before {
+  content: "\e902";
+  font-size: 18px;
+}
+.icon-twitter:before {
+  content: "\e911";
+  font-size: 18px;
+}
+.icon-google:before {
+  content: "\e903";
+  font-size: 18px;
+}

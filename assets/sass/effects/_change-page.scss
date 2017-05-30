@@ -1,0 +1,93 @@
+
+//-----------------------------------------//
+//animate-top-change-hide
+//-----------------------------------------//
+
+.animate-top-change-hide{
+  pointer-events: none;
+  transform: translateY(-100%);
+  position: absolute;
+}
+
+//-----------------------------------------//
+//animate-bottom-change-hide
+//-----------------------------------------//
+
+.animate-bottom-change-hide{
+  pointer-events: none;
+  transform: translateY(100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+//-----------------------------------------//
+//animate-left-change-hide
+//-----------------------------------------//
+
+.animate-left-change-hide{
+  pointer-events: none;
+  transform: translateX(-100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+//-----------------------------------------//
+//animate-right-change-hide
+//-----------------------------------------//
+
+.animate-right-change-hide{
+  pointer-events: none;
+  transform: translateX(100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+//-----------------------------------------//
+//animate-top-change
+//-----------------------------------------//
+
+.animate-top-change{
+  pointer-events: auto;
+  position: absolute;
+  transform: translateY(0px);
+  top: 0;
+  left: 0;
+}
+
+//-----------------------------------------//
+//animate-bottom-change
+//-----------------------------------------//
+
+.animate-bottom-change{
+  pointer-events: auto;
+  position: absolute;
+  transform: translateY(0px);
+  top: 0;
+  left: 0;
+}
+
+
+//-----------------------------------------//
+//animate-left-change
+//-----------------------------------------//
+
+.animate-left-change{
+  pointer-events: auto;
+  position: absolute;
+  transform: translateX(0px);
+  top: 0;
+  left: 0;
+}
+
+//-----------------------------------------//
+//animate-right-change
+//-----------------------------------------//
+
+.animate-right-change{
+  pointer-events: auto;
+  position: absolute;
+  transform: translateX(0px);
+}

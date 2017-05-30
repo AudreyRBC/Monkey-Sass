@@ -1,0 +1,91 @@
+//-----------------------------------------//
+//cta
+//-----------------------------------------//
+
+.cta{
+  padding: 12.5px 25px;
+  outline: none;
+  text-decoration: none;
+  border-radius: 2px;
+  font-family: $semibold;
+  display: inline-table;
+  text-align: center;
+  margin-bottom: 20px;
+  min-width: 155px;
+  @include font-size(16);
+  cursor: pointer;
+  transition : all .3s ease;
+}
+
+@each $i in $darkBackground{
+  .bg-#{nth($i,1)}{
+    .cta-primary{
+      background-color: $red;
+      color: $white;
+      border: 1px solid $red;
+      &:hover{
+        background-color: transparent;
+        color: $red;
+        border: 1px solid $red;
+      }
+    }
+    .cta-secondary{
+      background-color: $lightcream;
+      color: $darkgrey;
+      border: 1px solid $lightcream;
+      &:hover{
+        background-color: transparent;
+        color: $cream;
+        border: 1px solid $cream;
+      }
+    }
+    .cta-tertiary{
+      background-color: transparent;
+      color: $white;
+      border: 1px solid $white;
+      &:hover{
+        background-color: $cream;
+        color: $darkgrey;
+        border: 1px solid $cream;
+      }
+    }
+  }
+}
+
+@each $i in $lightBackground{
+  .bg-#{nth($i,1)}{
+    .cta-primary{
+      @extend .cta;
+      background-color: $red;
+      color: $white;
+      border: 1px solid $red;
+      &:hover{
+        background-color: transparent;
+        color: $red;
+        border: 1px solid $red;
+      }
+    }
+    .cta-secondary{
+      @extend .cta;
+      background-color: $darkgrey;
+      color: $lightcream;
+      border: 1px solid $darkgrey;
+      &:hover{
+        background-color: transparent;
+        color: $darkgrey;
+        border: 1px solid $darkgrey;
+      }
+    }
+    .cta-tertiary{
+      @extend .cta;
+      background-color: transparent;
+      color: $darkgrey;
+      border: 1px solid $darkgrey;
+      &:hover{
+        background-color: $darkgrey;
+        color: $cream;
+        border: 1px solid $darkgrey;
+      }
+    }
+  }
+}

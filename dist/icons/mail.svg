@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="27px" viewBox="0 0 36 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>layer</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M34.8740217,8.96904206 C35.4958823,8.42490839 36,8.64780907 36,9.47622385 L36,29.507577 C36,30.3318195 35.3287962,31 34.4989581,31 L1.50104195,31 C0.672039372,31 0,30.3359918 0,29.507577 L0,9.47622385 C0,8.65198141 0.50021075,8.42148801 1.12598294,8.96904206 L17.2495146,23.0772195 C17.6640167,23.4399111 18.3435372,23.433365 18.7505565,23.0772195 L34.8740217,8.96904206 Z M34.8740217,4.99734834 C35.4958823,4.44652806 35.3287962,4 34.4989581,4 L1.50104195,4 C0.672039372,4 0.50021075,4.44306565 1.12598294,4.99734834 L17.2495146,19.2788947 C17.6640167,19.6460433 18.3278257,19.6533334 18.7505565,19.2788947 L34.8740217,4.99734834 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/mail" transform="translate(0.000000, -4.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="layer" fill="#FFFFFF" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,216 @@
+//-----------------------------------------//
+//fonts
+//-----------------------------------------//
+
+//set your font in file "_fonts.scss"
+
+$xbold : fontxbold;
+$bold :    fontbold ;
+$semibold : fontsemibold ;
+$regular : fontregular ;
+$light :   fontlight ;
+$italic :  fontitalic ;
+
+
+//-----------------------------------------//
+//Titles
+//-----------------------------------------//
+
+
+*{
+  -webkit-font-smoothing: antialiased;
+
+  font-weight: normal;
+}
+h1, .h1{
+  font-family: $bold;
+  margin-bottom: 35px;
+  text-align: center;
+  line-height: 1.30;
+  @include font-size(26);
+  @media screen and(min-width: $large){
+    @include font-size(32);
+  }//$large
+  &:after{
+    display: none;
+  }
+}
+h2, .h2{
+  font-family: $light;
+  margin-bottom: 35px;
+  text-align: center;
+  line-height: 1.30;
+  @include font-size(26);
+  @media screen and(min-width: $large){
+    @include font-size(32);
+  }//$large
+  &:after{
+    display: none;
+  }
+}
+h3, .h3{
+  font-family: $bold;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  @include font-size(22);
+  &:after{
+    content: '';
+    display: block;
+    width: 80%;
+    max-width: 85px;
+    height: 5px;
+    margin: 20px auto;
+    background: $darkgrey;
+  }
+}
+h4, .h4{
+  font-family: $xbold;
+  margin-bottom: 35px;
+  text-align: center;
+  @include font-size(14);
+  text-transform: uppercase;
+  &:after{
+    display: none;
+  }
+}
+h5, .h5{
+  font-family: $bold;
+  margin-bottom: 35px;
+  text-align: center;
+  @include font-size(18);
+  &:after{
+    display: none;
+  }
+}
+h6, .h6{
+  font-family: $bold;
+  margin-bottom: 35px;
+  text-align: center;
+  @include font-size(14);
+  &:after{
+    display: none;
+  }
+}
+
+p, .p{
+  font-family: $regular;
+  @include font-size(18);
+  line-height: 27px;
+  // margin-bottom: 55px;
+  &:after{
+    display: none;
+  }
+}
+.p-big{
+  font-family: $bold;
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  @include font-size(22);
+  &:after{
+    display: none;
+  }
+}
+.p-regular{
+  font-family: $regular;
+  @include font-size(18);
+  line-height: 27px;
+  max-width: 440px;
+  margin-bottom: 0;
+  text-align: left;
+  &:after{
+    display: none;
+  }
+}
+.p-medium{
+  @include font-size(16);
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 0;
+  &:after{
+    display: none;
+  }
+}
+.p-small{
+  @extend .h4;
+  @include font-size(12);
+  &:after{
+    display: none;
+  }
+}
+
+
+
+//set color text in dark bg
+@each $i in $darkBackground{
+
+  .bg-#{nth($i,1)}{
+    h1, .h1, h2, .h2, h3, .h3, h4, .h4, h4, h5, .h5, h6, .h6, p, .p, .p-medium, .p-small, span, input, label, fieldset, a{
+      color: $white;
+    }
+    h3::after{
+      background: $white;
+    }
+  }
+
+}
+@each $i in $lightBackground{
+
+  .bg-#{nth($i,1)}{
+    h1, .h1, h2, .h2, h3, .h3, h4, .h4, h4, h5, .h5, h6, .h6, p, .p, .p-medium, .p-small, span, input, label, fieldset, a{
+      color: $darkgrey;
+    }
+    h3::after{
+      background: $darkgrey;
+    }
+  }
+
+}
+
+
+//-----------------------------------------//
+//text-position
+//-----------------------------------------//
+
+.center{
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+.right{
+  width: 100%;
+  display: block;
+  text-align: right
+}
+.left{
+  width: 100%;
+  display: block;
+  text-align: left;
+}
+.justify{
+  width: 100%;
+  display: block;
+  text-align: justify;
+}
+//-----------------------------------------//
+//text-style
+//-----------------------------------------//
+.light{
+  font-family: $light;
+}
+.regular{
+  font-family: $regular;
+}
+.semibold{
+  font-family: $semibold;
+}
+.bold{
+  font-family: $bold;
+}
+.xbold{
+  font-family: $xbold;
+}
+.italic{
+  font-style: italic;
+}

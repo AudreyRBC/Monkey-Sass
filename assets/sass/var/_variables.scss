@@ -1,0 +1,112 @@
+//-----------------------------------------//
+//screen size
+//-----------------------------------------//
+$small :   320px;
+$medium :  768px;
+$large :   1024px;
+$x-large : 1200px;
+
+$fullWidth : 100vw;
+$fullHeight : 100vh;
+
+@import '_colors';
+@import '_font-style';
+@import '_cta';
+@import '_flex';
+@import '_pad-marg';
+
+@import '_containers';
+@import '_columns';
+@import '_borders';
+@import '_block-style';
+
+
+
+main{
+  width: 100%;
+}
+.small-full-screen{
+    width: $fullWidth;
+    height: $fullHeight;
+    overflow: hidden;
+    background: $white;
+    transition: all .3s ease;
+  @media screen and(min-width: $large){
+    width: 100% ;
+  }//$small
+}
+.medium-full-screen{
+  @media screen and(min-width: $medium){
+    width: $fullWidth;
+    height: $fullHeight;
+    overflow: hidden;
+    background: $white;
+    transition: all .3s ease;
+  }//$medium
+}
+.large-full-screen{
+  @media screen and(min-width: $large){
+    width: $fullWidth;
+    height: $fullHeight;
+    overflow: hidden;
+    background: $white;
+    transition: all .3s ease;
+  }//$medium
+}
+.x-large-full-screen{
+  @media screen and(min-width: $x-large){
+    width: $fullWidth;
+    height: $fullHeight;
+    overflow: hidden;
+    background: $white;
+    transition: all .3s ease;
+  }//$medium
+}
+
+.hidden{
+  transform: scale(0) !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
+  border: 0px solid transparent !important;
+  text-indent: -9999px !important;
+  opacity: 0 !important;
+  overflow: hidden !important;
+  font-size: 0 !important;
+}
+.text-hidden{
+  transform: scale(0);
+  padding: 0;
+  margin: 0;
+  border: 0px solid transparent;
+  text-indent: -9999px;
+  opacity: 0;
+  overflow: hidden;
+}
+.xs-hidden{
+  @media screen and(min-width: $small){
+    transform: scale(0);
+    padding: 0;
+    margin: 0;
+    width: 0;
+    height: 0;
+    border: 0px solid transparent;
+    text-indent: -9999px;
+    opacity: 0;
+    overflow: hidden;
+  }//$small
+}
+.xl-hidden{
+  @media screen and(min-width: $large){
+    transform: scale(0);
+    padding: 0;
+    margin: 0;
+    width: 0;
+    height: 0;
+    border: 0px solid transparent;
+    text-indent: -9999px;
+    opacity: 0;
+    overflow: hidden;
+  }//$large
+}

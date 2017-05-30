@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="36px" viewBox="0 0 18 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44 (41411) - http://www.bohemiancoding.com/sketch -->
+    <title>layer</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M26.0163934,6.36702128 C25.0327869,6.07978723 23.9016393,5.88829787 22.8688525,5.88829787 C21.5901639,5.88829787 18.8360656,6.70212766 18.8360656,8.28191489 L18.8360656,12.0638298 L25.3770492,12.0638298 L25.3770492,18.4308511 L18.8360656,18.4308511 L18.8360656,36 L12.2459016,36 L12.2459016,18.4308511 L9,18.4308511 L9,12.0638298 L12.2459016,12.0638298 L12.2459016,8.85638298 C12.2459016,4.0212766 14.5081967,0 19.9672131,0 C21.8360656,0 25.1803279,0.0957446809 27,0.718085106 L26.0163934,6.36702128 Z" id="path-1"></path>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon/social-media/facebook" transform="translate(-9.000000, 0.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="layer" fill="#FFFFFF" xlink:href="#path-1"></use>
+        </g>
+    </g>
+</svg>
