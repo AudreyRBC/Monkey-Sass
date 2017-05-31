@@ -1,3 +1,5 @@
+$white : #ffffff;
+
 .container__colors{
   li{
     @extend .flex-col;
@@ -12,4 +14,12 @@
     margin:0 auto;
     margin-bottom: 20px;
   }
+}
+.header-stylesheet{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+  background: $white;
 }

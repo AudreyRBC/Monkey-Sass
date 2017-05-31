@@ -31,6 +31,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  transition: all .3s ease;
 }
 
 //-----------------------------------------//
@@ -44,6 +45,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  transition: all .3s ease;
 }
 
 //-----------------------------------------//
@@ -55,8 +57,9 @@
   pointer-events: auto;
   transform: translateY(0px);
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
+  transition: all .3s ease;
 }
 
 //-----------------------------------------//
@@ -68,8 +71,9 @@
   transform: translateY(50px);
   pointer-events: none;
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
+  transition: all .3s ease;
 }
 
 //-----------------------------------------//
@@ -83,6 +87,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  transition: all .3s ease;
 }
 
 //-----------------------------------------//
@@ -96,6 +101,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  transition: all .3s ease;
 }
 
 //-----------------------------------------//
@@ -108,7 +114,8 @@
   transform: translateX(0px);
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
+  transition: all .3s ease;
 }
 
 //-----------------------------------------//
@@ -121,7 +128,8 @@
   pointer-events: none;
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0;
+  transition: all .3s ease;
 }
 
 //-----------------------------------------//
@@ -131,6 +139,7 @@
 .animate-fade-in{
   opacity: 1;
   pointer-events: auto;
+  transition: all .3s ease;
 }
 
 //-----------------------------------------//
@@ -141,4 +150,5 @@
   opacity: 0;
   pointer-events: none;
   position: absolute;
+  transition: all .3s ease;
 }

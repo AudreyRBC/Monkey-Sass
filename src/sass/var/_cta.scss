@@ -20,6 +20,7 @@
 @each $i in $darkBackground{
   .bg-#{nth($i,1)}{
     .cta-primary{
+      @extend .cta;
       background-color: $red;
       color: $white;
       border: 1px solid $red;
@@ -30,6 +31,7 @@
       }
     }
     .cta-secondary{
+      @extend .cta;
       background-color: $lightcream;
       color: $darkgrey;
       border: 1px solid $lightcream;
@@ -40,6 +42,7 @@
       }
     }
     .cta-tertiary{
+      @extend .cta;
       background-color: transparent;
       color: $white;
       border: 1px solid $white;

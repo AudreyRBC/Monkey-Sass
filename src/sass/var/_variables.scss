@@ -74,6 +74,9 @@ main{
   opacity: 0 !important;
   overflow: hidden !important;
   font-size: 0 !important;
+  position: absolute !important;
+  line-height: 0 !important;
+  pointer-events: none !important;
 }
 .text-hidden{
   transform: scale(0);

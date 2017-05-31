@@ -1,3 +1,7 @@
+import $ from "jquery";
+import slick from "slick-carousel";
+
+console.log('ok')
 $(function(){
   function init(){
     function OnClick(){

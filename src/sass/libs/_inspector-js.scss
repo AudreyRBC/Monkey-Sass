@@ -1,4 +1,8 @@
-.html-inspector{
+$white : #ffffff;
+$green : #51FF9A;
+$black : #333333;
+$purple : #9B2DE8;
+.wrapper-html-inspector{
   position: relative;
 }
 .inspector-button{
@@ -10,18 +14,73 @@
   right: 50px;
   opacity: 0;
   z-index: 1000;
-  color: red;
+  color: $purple !important;
   transition: all .3s ease;
-  border: 3px solid transparent;
+  border: 2px solid $purple !important;
+  text-align: center;
+  line-height: 45px;
   &.visible{
     opacity: 1;
-    border: 3px solid red;
   }
   &:hover{
-    color: yellow;
-    border: 3px solid yellow;
+    color: $green!important;
+    border: 2px solid $green !important;
   }
 }
 code{
   max-width: 100%;
+}
+.main__inspector{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 800px;
+  background: $white !important;
+  z-index: 10000;
+  box-shadow: 0 0 10px rgba($black, .3);
+  //transition: all .4s ease;
+  &.animate-right-show, &.animate-right-hide{
+    position: fixed !important;
+    transition: all .3s ease;
+  }
+}
+
+.inspector-heading{
+  background: $purple !important;
+  color:$white !important;
+  padding: 40px;
+  position: relative;
+  h3::after{
+    display: none;
+  }
+  .inspector-close{
+    position: absolute;
+    top: calc(50% - 28px);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 50px;
+  }
+}
+.inspector-content{
+  background: $white !important;
+  height: calc(100vh - 200px);
+  padding: 25px 25px 100px 25px;
+  word-wrap: break-word;
+  overflow: scroll;
+}
+.inspector-copy{
+  margin: 25px;
+  box-shadow: 0 0 10px rgba($black, .3);
+  background: $purple !important;
+  color: $white !important;
+  padding: 20px;
+  border-radius: 2px;
+  font-weight: bold;
+  cursor: pointer;
+  ::after{
+    display: none;
+  }
 }

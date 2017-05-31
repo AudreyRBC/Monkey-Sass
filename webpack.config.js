@@ -10,9 +10,10 @@ require('es6-promise').polyfill();
 
 module.exports = {
   entry: [
-    './src/js/libs/jquery-3.1.1.min.js',
+    // './src/js/libs/jquery-3.1.1.min.js',
     // './src/js/libs/slick.min.js',
     './src/js/libs/inspector.js',
+    './src/js/libs/stylesheet.js',
     './src/js/main.js',
     './src/js/app.js',
   ],

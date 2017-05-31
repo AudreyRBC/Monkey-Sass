@@ -1,5 +1,5 @@
-<section class="container__full mtb200">
-  <h2 class="small-column-1-1">Colors</h2>
+<section class="container__full mtb200 html-inspector">
+  <h1 class="small-column-1-1">Colors</h1>
   <ul class="container-columns__small-center container__colors border-tb p80">
     <li class="small-column-1-1 medium-column-1-2 large-column-1-4">
       <div class="bg-white pb100"></div>

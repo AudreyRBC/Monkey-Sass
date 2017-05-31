@@ -29,3 +29,15 @@ menu {
     }
   }
 }
+footer{
+  .h4{
+    margin-bottom: 15px;
+  }
+  .container-image{
+    background: $grey;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    margin: 0 auto;
+  }
+}

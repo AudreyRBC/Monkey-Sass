@@ -84,28 +84,28 @@ $borderStyle : solid;
           content: '';
           display: block;
           position: absolute;
-          bottom : 100%; left: 0;
+          top : -100px; left: 0;
           transform: rotate(0deg);
           background-image: url('/dist/images/border-#{nth($i,1)}.png');
           width: 100%;
-          height: 20%;
+          height: 100px;
           background-repeat: repeat-x;
-          background-size: 100%;
-          background-position: bottom center;
+          background-size: 150%;
+          background-position: top center;
         }
       }
-      @else if $position  == bottom{
+      @else if $position  == bottom {
         &:after{
           content: '';
           display: block;
           position: absolute;
-          top : 100%; left: 0;
+          bottom : -100px; left: 0;
           transform: rotate(180deg);
           background-image: url('/dist/images/border-#{nth($i,1)}.png');
           width: 100%;
-          height: 10%;
+          height: 100px;
           background-repeat: repeat-x;
-          background-size: 100%;
+          background-size: 150%;
           background-position: top center;
         }
       }

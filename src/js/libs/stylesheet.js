@@ -1,7 +1,20 @@
+import $ from "jquery";
 
-var $className;
-$('*').on('click', function(i){
-  $that = $(this);
-  $className = $that[0].className;
-  console.log($className, $that[0], $that);
+var $header = $('.header-stylesheet');
+var $section = $('.html-inspector');
+var navArray = [];
+var $titleChild = []
+var $title;
+var $subtitle;
+
+$section.each(function(){
+
+  $title = $(this).children('h1').text();
+  $subtitle = $(this).children('h2').text();
+  if($title){
+    navArray.push($title);
+  }
+
+
 })
+console.log(navArray)
