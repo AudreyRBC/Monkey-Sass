@@ -1,70 +1,53 @@
-'use strict';
+const path = require('path')
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
-var path = require('path');
-var webpack = require('webpack');
-var autoprefixer = require('autoprefixer');
-var ExtractTextPlugin = require("extract-text-webpack-plugin");
-var styleLintPlugin = require('stylelint-webpack-plugin');
-
-require('es6-promise').polyfill();
+// require('es6-promise').polyfill();
 
 module.exports = {
-  entry: [
-    // './src/js/libs/jquery-3.1.1.min.js',
-    // './src/js/libs/slick.min.js',
-    './src/js/libs/inspector.js',
-    './src/js/libs/stylesheet.js',
-    './src/js/main.js',
+  entry : [
     './src/js/app.js',
+    './src/sass/app.scss'
   ],
-  output: {
-    path: __dirname,
-    filename: 'dist/js/app.min.js'
+  output : {
+    //
+    // JAVSCRIPT OUTPUT
+    //
+    filename : 'dist/js/app.js'
   },
-
-  plugins: [
-    // Specify the resulting CSS filename
-    new ExtractTextPlugin('./dist/css/app.css'),
-
-    // Stylelint plugin
-    new styleLintPlugin({
-      configFile: '.stylelintrc',
-      context: '',
-      files: '**/*.scss',
-      syntax: 'scss',
-      failOnError: false,
-      quiet: false
-    }),
-  ],
-
-  module: {
-    loaders: [
+  module : {
+    rules : [
+      //
+      // JAVASCRIPT
+      //
       {
         test: /\.js$/,
         loader: 'babel-loader',
         exclude: /node_modules/
       },
+      //
+      // SASS
+      //
       {
-        test: /\.scss$/,
-        loader: ExtractTextPlugin.extract(
-          'style-loader',
-          'css-loader!postcss!sass-loader?outputStyle=expanded'
-        )
+        test : /\.(sass|scss)$/,
+        loader : ExtractTextPlugin.extract([
+          'css-loader?url=false', //?url=false => prevent url to be verified
+          'autoprefixer-loader?browsers=last 2 versions',
+          'resolve-url-loader',
+          'sass-loader'
+        ])
       }
     ]
   },
 
-  postcss: [
-    autoprefixer({
-      browsers: ['last 2 versions']
+  plugins : [
+    //
+    // CSS OUTPUT
+    //
+    new ExtractTextPlugin({
+      filename : 'dist/css/app.css',
+      allChunks : true
     })
   ],
 
-  stats: {
-    // Colored output
-    colors: true
-  },
-
-  // Create Sourcemaps for the bundle
   devtool: 'source-map'
-};
+}
