@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Stylesheet | Hunger Race</title>
-  <link rel="stylesheet" href="dist/css/app.css">
+  <link rel="stylesheet" href="./dist/css/app.css">
 </head>
 <body>
   <header class="header-stylesheet">
@@ -37,6 +37,6 @@
     <?php include 'footer.html' ?>
 
   </main>
-  <script src="dist/js/app.min.js"></script>
+  <script src="./dist/js/app.js"></script>
 </body>
 </html>

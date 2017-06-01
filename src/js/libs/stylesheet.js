@@ -17,4 +17,4 @@ $section.each(function(){
 
 
 })
-console.log(navArray)
+console.log(navArray)  
